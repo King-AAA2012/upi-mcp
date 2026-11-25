@@ -1,0 +1,36 @@
+{
+  "name": "upi-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for UPI handle (VPA) verification. Validates the format of a UPI ID such as name@paytm locally, with no API key.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "upi",
+    "vpa",
+    "upi-id",
+    "india",
+    "indian-data",
+    "payment"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "upi-mcp": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.6.1"
+  }
+}
